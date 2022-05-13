@@ -4,7 +4,6 @@
 
 ;; Author: David Holm <dholmster@gmail.com>
 ;; Created: 05 Apr 2014
-;; Keywords: benchmark
 
 ;; This file is not part of GNU Emacs.
 
@@ -79,8 +78,8 @@
    ("ms" 7 (lambda (a b) (< (string-to-number (aref (cadr a) 2))
                             (string-to-number (aref (cadr b) 2))))
     :right-align t)
-   ("total ms" 7 (lambda (a b) (< (string-to-number (aref (cadr a) 2))
-                                  (string-to-number (aref (cadr b) 2))))
+   ("total ms" 7 (lambda (a b) (< (string-to-number (aref (cadr a) 3))
+                                  (string-to-number (aref (cadr b) 3))))
     :right-align t)]
   "Benchmark list format.")
 
